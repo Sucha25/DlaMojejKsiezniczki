@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dla Mojej Najcudowniejszej Dziewczyny</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Główna zawartość strony -->
+    <header>
+        <h1>Dla Mojej Najcudowniejszej Dziewczyny</h1>
+        <nav>
+	<br>
+            <ul>
+                <li><a href="#home">Strona Główna</a></li>
+                <li><a href="#calendar">Kalendarz</a></li>
+                <li><a href="#letter">List</a></li>
+                <li><a href="#history">Historia</a></li>
+                <li><a href="#game">Gra</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#quartz">Kwarc Różowy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Strona Główna -->
+    <section id="home">
+        <h2>Strona Główna</h2>
+        <p>Witaj na stronie stworzonej specjalnie dla Ciebie!</p>
+        <div class="gallery">
+            <img src="https://www.icloud.com/photos/0da-8yCmN4DhfpWxPkbl30HDw">
+            <img src="https://www.icloud.com/photos/YYYYYYYYY" alt="Zdjęcie 2">
+            <img src="https://www.icloud.com/photos/ZZZZZZZZZ" alt="Zdjęcie 3">
+            <img src="https://www.icloud.com/photos/WWWWWWWWW" alt="Zdjęcie 4">
+        </div>
+    </section>
+
+    <!-- Kalendarz -->
+    <section id="calendar">
+        <h2>Kalendarz</h2>
+        <div class="calendar">
+            <p><span class="date">19.01.2024</span> <span class="heart">&#10084;</span></p>
+        </div>
+        <div id="countdown">
+            <h3>Odliczanie do naszej rocznicy</h3>
+            <p id="timer"></p>
+        </div>
+    </section>
+
+    <!-- List -->
+    <section id="letter">
+        <h2>List</h2>
+        <p>Tutaj możesz wpisać swój list...</p>
+    </section>
+
+    <!-- Historia -->
+    <section id="history">
+        <h2>Historia od 1 klasy</h2>
+        <p>To tak od początku pierwszej klasy widziałam śliczną dziewczynę, ale to miałam troszkę zdanie ze zbyt idealnie być nie może bo zjeżdża wszystkich wzrokiem i no po prostu się Ciebie bałam. Jak zaczęłyśmy jakoś więcej rozmawiać to no spodobałaś mi się naprawdę ale jednocześnie no nie byłam do końca pewna co ja czuję bo po prostu Cię nie znałam tak bliżej. Pamiętam jak gdzieś tak pierwszy raz dłużej jakoś się przytuliłyśmy czy wtedy jak zapytałaś czy możesz się przytulić no poczułam coś więcej, jak zaczęłaś tak się mega o mnie troszczyć to już coś naprawdę czułam. Jakoś jak już się przywiązałam do Ciebie bardziej byłam naprawdę bardzo szczęśliwa że mam Ciebie, dlatego też pojawił się strach że coś mogło by być inaczej a skoro jest mi tak dobrze to po co mam ryzykować że coś mogło by się zmienić w tej relacji. Mimo wszystko czułam się tak dziwnie bardzo bo byłam szczęśliwa ale jednak mega zestresowana byłam przy Tobie, później już powoli było luźniej ale dalej coś było nie tak. Strasznie starałam się nie myśleć o Tobie w sensie takim że chciała bym czegoś więcej, ale mimo wszystko siedziało to we mnie bardzo. Jak już myślałam że odpuściłam tak naprawdę to dalej pamiętam że byłam przy Tobie zestresowana żeby nie zrobić niczego źle ani nic. No ale to tak było że raz odpuszczałam a raz nie mogłam o Tobie przestać myśleć, i to tam się mieszało aż do sylwestra. Co najśmieszniejsze już po tym dalej miałam strasznie namieszane w głowie czy śni mi się to czy może jednak naprawdę mam jakieś szanse ale dalej kierował mną strach żeby o tym pogadać. Nie jestem w stanie opisać jak szczęśliwa byłam jak weszliśmy w związek, jak weszłam w związek z dziewczyną która spodobała mi się tak na prawdę od razu. A to co czułam w tym momencie jak mnie pocałowałaś to naprawdę nie zapomnę nigdy, czułam tyle emocji naraz i to tak silnych  że nie wiedziałam kompletnie co się dzieje. Wydaje mi się że to że pamiętam ten moment bardzo dobrze jest związany z po prostu emocjami jakie odczułam największą rolę odegrał chyba szok bo no nie spodziewałam się wtedy tego kompletnie. Takie można powiedzieć że nawet skryte trochę marzenie się spełniło właśnie wtedy. To jak delikatnie się do mnie przysunęłaś i jakim przyjemnym głosem zapytałaś to naprawdę było coś tak wyjątkowego że nie da się tego zapomnieć. No myślę że mogę to na spokojnie to nazwać marzeniem ze względu na to że bardzo tego chciałam i często wtedy mi się wydawało że to taki mój wyidealizowany świat czyli z Tobą, jednak po czasie wiem że jest to możliwe i jest tak właśnie jak mi się to marzyło, bo jest idealnie. I wiem że mówiłam Ci nie raz o tym wszystkim ale mimo wszystko chcę to tu zostawić żebyś pamiętała jak ważna jesteś. </p>
+    </section>
+
+    <!-- Gra -->
+    <section id="game">
+        <h2>Gra</h2>
+        <p>Zaznacz 3 serduszka!</p>
+        <div id="hearts-game">
+            <button onclick="selectHeart(1)">❤️</button>
+            <button onclick="selectHeart(2)">❤️</button>
+            <button onclick="selectHeart(3)">❤️</button>
+        </div>
+        <p id="love-message" style="display:none;">Kocham Cię!</p>
+    </section>
+
+    <!-- Video -->
+    <section id="video">
+        <h2>Video</h2>
+        <video controls>
+            <source src="https://www.icloud.com/videos/XXXXXXXXX" type="video/mp4">
+            Twoja przeglądarka nie obsługuje tego formatu video.
+        </video>
+    </section>
+
+    <!-- Kwarc Różowy -->
+    <section id="quartz">
+        <h2>Kwarc Różowy</h2>
+        <p>Kwarc różowy to kamień miłości, który symbolizuje bezwarunkową miłość, spokój i harmonię...</p>
+    </section>
+
+    <!-- Napis Kocham Cię -->
+    <section id="love-message">
+        <h1>Kocham Cię skarbie!</h1>
+    </section>
+
+    <!-- Stopka -->
+    <footer>
+        <p>Strona dedykowana mojej kochanej dziewczynie Karolinie.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

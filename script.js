@@ -1,8 +1,13 @@
 
 // Funkcja do zaznaczenia serduszka
 function selectHeart(id) {
-    const hearts = document.querySelectorAll('#hearts-game button');
-    if (hearts.length === 3) {
+    console.log('Clicked heart:', id);
+    const heartButton = document.getElementById(`heart-${id}`);
+    heartButton.classList.add('selected');
+    const selectedHearts = document.querySelectorAll('#hearts-game button.selected');
+    console.log('Selected hearts:', selectedHearts.length);
+    
+    if (selectedHearts.length === 3) {
         document.getElementById('love-message').style.display = 'block';
     }
 }

@@ -1,8 +1,20 @@
+// Zmienna do śledzenia zaznaczenia serduszek
+let selectedHearts = new Set();
+
 // Funkcja do zaznaczenia serduszka
 function selectHeart(id) {
     const heartButton = document.getElementById(`heart-${id}`);
-    heartButton.classList.add('selected');
-    document.getElementById('love-message').style.display = 'block';
+    
+    // Dodanie klasy do zaznaczenia serduszka
+    if (!heartButton.classList.contains('selected')) {
+        heartButton.classList.add('selected');
+        selectedHearts.add(id); // Dodanie ID zaznaczonego serduszka do zbioru
+    }
+
+    // Sprawdzenie, czy wszystkie trzy serduszka zostały zaznaczone
+    if (selectedHearts.size === 3) {
+        document.getElementById('love-message').style.display = 'block';
+    }
 }
 
 // Funkcja do odliczania czasu

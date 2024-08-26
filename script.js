@@ -1,19 +1,9 @@
 
 // Funkcja do zaznaczenia serduszka
-let selectedHearts = 0;
-
 function selectHeart(id) {
-    console.log(`Serduszko ${id} zostało kliknięte.`);
-}
-    
-    if (!heartButton.classList.contains('selected')) {
-        heartButton.classList.add('selected');
-        selectedHearts++;
-    }
-    
-    if (selectedHearts === 3) {
-        document.getElementById('love-message').style.display = 'block';
-    }
+    const heartButton = document.getElementById(heart-${id});
+    heartButton.classList.add('selected');
+    document.getElementById('love-message').style.display = 'block';
 }
 
 

@@ -71,6 +71,7 @@ nav ul li a {
 
 /* Sekcja Kocham Cię */
 #love-message {
+    display: none;
     background-color: #ff69b4; /* Kolor tła sekcji */
     color: white;
     padding: 20px;

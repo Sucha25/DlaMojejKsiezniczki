@@ -28,7 +28,7 @@ function updateCountdown() {
     document.getElementById('timer').innerHTML = `${days} dni ${hours} godzin ${minutes} minut ${seconds} sekund`;
 
     if (distance < 0) {
-        document.getElementById('timer').innerHTML = "!";
+        document.getElementById('timer').innerHTML = "Pierwszy rooook!";
     }
 }
 

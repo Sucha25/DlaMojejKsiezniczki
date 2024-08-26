@@ -1,9 +1,18 @@
 
 // Funkcja do zaznaczenia serduszka
+let selectedHearts = 0;
+
 function selectHeart(id) {
     const heartButton = document.getElementById(`heart-${id}`);
-    heartButton.classList.add('selected');
-    document.getElementById('love-message').style.display = 'block';
+    
+    if (!heartButton.classList.contains('selected')) {
+        heartButton.classList.add('selected');
+        selectedHearts++;
+    }
+    
+    if (selectedHearts === 3) {
+        document.getElementById('love-message').style.display = 'block';
+    }
 }
 
 // Funkcja do odliczania czasu

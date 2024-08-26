@@ -1,7 +1,7 @@
 
 // Funkcja do zaznaczenia serduszka
 function selectHeart(id) {
-    const heartButton = document.getElementById(heart-${id});
+ const heartButton = document.getElementById(`heart-${id}`);
     heartButton.classList.add('selected');
     document.getElementById('love-message').style.display = 'block';
 }

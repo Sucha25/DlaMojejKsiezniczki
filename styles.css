@@ -78,12 +78,6 @@ nav ul li a {
     opacity: 0;
 }
 
-/* Gdy wiadomość jest widoczna */
-#love-message.show {
-    opacity: 1;
-}
-
-}
 
 /* Stopka */
 footer {

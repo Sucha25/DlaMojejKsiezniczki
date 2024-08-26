@@ -14,6 +14,12 @@ function selectHeart(id) {
         document.getElementById('love-message').style.display = 'block';
     }
 }
+if (selectedHearts === 3) {
+    const message = document.getElementById('love-message');
+    message.style.display = 'block';
+    message.classList.add('show');
+}
+
 
 // Funkcja do odliczania czasu
 function updateCountdown() {
@@ -29,7 +35,7 @@ function updateCountdown() {
     document.getElementById('timer').innerHTML = `${days} dni ${hours} godzin ${minutes} minut ${seconds} sekund`;
 
     if (distance < 0) {
-        document.getElementById('timer').innerHTML = "Minęło!";
+        document.getElementById('timer').innerHTML = "!";
     }
 }
 

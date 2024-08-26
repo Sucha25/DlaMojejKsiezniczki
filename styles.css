@@ -70,19 +70,29 @@ nav ul li a {
 }
 
 /* Sekcja Kocham Cię */
-#love-message {
-    background-color: #ff69b4; /* Kolor tła sekcji */
+ #love-message {
+    background-color: #ff69b4;
     color: white;
     padding: 20px;
     margin-top: 50px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Gdy wiadomość jest widoczna */
+#love-message.show {
+    opacity: 1;
+}
+
 }
 
 /* Stopka */
 footer {
-    background-color: #ff69b4; /* Kolor stopki dopasowany do nagłówka */
+    background-color: #ff69b4;
     color: white;
     padding: 15px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+    z-index: 10; 
 }

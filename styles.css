@@ -76,7 +76,6 @@ nav ul li a {
     padding: 20px;
     margin-top: 50px;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
 }
 
 /* Gdy wiadomość jest widoczna */

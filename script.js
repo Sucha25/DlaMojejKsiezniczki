@@ -3,7 +3,8 @@
 let selectedHearts = 0;
 
 function selectHeart(id) {
-    const heartButton = document.getElementById(`heart-${id}`);
+    console.log(`Serduszko ${id} zostało kliknięte.`);
+}
     
     if (!heartButton.classList.contains('selected')) {
         heartButton.classList.add('selected');

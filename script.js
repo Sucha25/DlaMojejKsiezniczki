@@ -13,6 +13,8 @@ function selectHeart(id) {
     if (selectedHearts === 3) {
         document.getElementById('love-message').style.display = 'block';
     }
+}
+
 
 // Funkcja do odliczania czasu
 function updateCountdown() {
